@@ -18,7 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix --color",
+    "lint:fix": "eslint ./src --fix",
     "format": "prettier ./src --write",
     "eject": "react-scripts eject",
     "prepare": "husky install"
@@ -53,7 +53,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "typescript": "^5.0.4"
@@ -73,12 +73,12 @@
   "main": "^C",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/merkurevaan/todo.git"
+    "url": "git+https://github.com/ann-anufrieva/todo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/merkurevaan/todo/issues"
+    "url": "https://github.com/ann-anufrieva/todo/issues"
   },
-  "homepage": "https://github.com/merkurevaan/todo#readme"
+  "homepage": "https://github.com/ann-anufrieva/todo#readme"
 }
