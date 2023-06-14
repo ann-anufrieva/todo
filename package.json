@@ -55,7 +55,8 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.2.1",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
   },
   "husky": {
     "hooks": {
@@ -67,5 +68,17 @@
       "npm run lint:fix",
       "git add"
     ]
-  }
+  },
+  "description": "Todo App",
+  "main": "^C",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merkurevaan/todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merkurevaan/todo/issues"
+  },
+  "homepage": "https://github.com/merkurevaan/todo#readme"
 }

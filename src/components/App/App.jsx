@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import Footer from '../Footer/Footer';
 import NewTaskForm from '../NewTaskForm/NewTaskForm';
 import TaskList from '../TaskList/TaskList';
 
+
 import './App.css';
 
-export default class App extends Component {
+const App = () => {
+
+  const [tasks, setTasks] = useState([]);
+  const [filter, setFilter] = useState('all');
+
+  const filteredTasks = (item) => {
+    setFilter(item);
+    return;
+  };
+
   maxId = 100;
 
   state = {
@@ -18,6 +28,7 @@ export default class App extends Component {
       { label: 'Completed', param: 'completed', active: false },
     ],
   };
+  
 
   createTask = (label) => ({
     description: label,
@@ -38,6 +49,7 @@ export default class App extends Component {
 
     return [...arr.slice(0, elIdx), newEl, ...arr.slice(elIdx + 1, arr.length)];
   };
+  
 
   getFilteredTasks = () => {
     const { activeFilter, tasks } = this.state;
@@ -132,6 +144,7 @@ export default class App extends Component {
         <header className="header">
           <h1>todos</h1>
           <NewTaskForm onTaskCreate={this.onTaskCreate} />
+          <Timer />
         </header>
         <section className="main">
           <TaskList
@@ -150,5 +163,5 @@ export default class App extends Component {
         />
       </section>
     );
-  }
-}
+  };
+};
